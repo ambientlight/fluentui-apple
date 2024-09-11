@@ -23,8 +23,7 @@ let package = Package(
         .target(
             name: "FluentUI",
             dependencies: [
-                .target(name: "FluentUI_ios", condition: .when(platforms: [.iOS, .visionOS, .macCatalyst])),
-                .target(name: "FluentUI_macos", condition: .when(platforms: [.macOS]))
+                .target(name: "FluentUI_ios", condition: .when(platforms: [.iOS, .visionOS, .macCatalyst]))
             ],
             path: "public"
         ),
@@ -45,13 +44,6 @@ let package = Package(
                 "TextField/TextField.resources.xcfilelist",
                 "Tooltip/Tooltip.resources.xcfilelist",
                 "TwoLineTitleView/TwoLineTitleView.resources.xcfilelist",
-            ]
-        ),
-        .target(
-            name: "FluentUI_macos",
-            path: "macos/FluentUI",
-            exclude: [
-                "FluentUI-Info.plist"
             ]
         )
     ]
