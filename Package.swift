@@ -7,13 +7,11 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [
         .iOS(.v15),
-        .macOS(.v12),
         .visionOS(.v1),
     ],
     products: [
         .library(
             name: "FluentUI",
-            type: .static,
             targets: [
                 "FluentUI"
             ]
