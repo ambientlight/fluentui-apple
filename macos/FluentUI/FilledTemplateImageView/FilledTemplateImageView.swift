@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 /// Custom view for displaying a template style image that can be filled with a specified color. This takes in an image with a corresponding
 /// overlay mask that is used for drawing the fill. The image and its corresponding fillMask need to line up appropriately so that when

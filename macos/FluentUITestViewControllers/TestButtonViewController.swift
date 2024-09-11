@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 import FluentUI
 
 let effectViewMaterials: [String: NSVisualEffectView.Material] = [

@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 extension NSAppearance {
 	var isDarkMode: Bool {

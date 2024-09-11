@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 /// A lightweight hyperlink control
 @objc(MSFLink)

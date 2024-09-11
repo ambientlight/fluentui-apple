@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 /// A circular button with a day label centered inside of it. This is meant to be used in a grid-like calendar view.
 class CalendarDayButton: NSButton {

@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 /// A visual Avatar icon for a user, cropped to a circle that either displays the user's
 /// image if available or the user's initials if an image is not available

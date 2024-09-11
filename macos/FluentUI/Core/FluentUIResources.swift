@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 
 /// A class for accessing the bundle and resource bundle associated with the FluentUI Framework
 public class FluentUIResources: NSObject {

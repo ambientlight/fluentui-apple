@@ -3,7 +3,9 @@
 //  Licensed under the MIT License.
 //
 
-import AppKit
+#if canImport(AppKit)
+	import AppKit
+#endif
 private struct Constants {
 	private init() {}
 	static let initialWindowWidth: CGFloat = 800
